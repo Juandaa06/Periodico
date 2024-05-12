@@ -1,0 +1,213 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    border: 0;
+    background-color: #f7f2ed;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1.2rem;
+    margin: 5px;
+    text-align: justify;
+    padding-bottom: 8px;
+    line-height: 22px;
+}
+
+img{
+    border-radius: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:rgb(175, 0, 0);
+}
+
+h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+h2, h3{
+    padding-left: 5px;
+}
+
+header{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+header .title{
+    width: 40%;
+}
+
+.fecha{
+    color:#202020;
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.subs{
+    font-size: 12px;
+    color: rgb(175, 0, 0);
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+header .join{
+    width: 10%;
+}
+
+ul{
+    padding: 8px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+
+.cuerpo {
+    display: flex;
+    flex: 1;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.izquierda {
+    flex: 1;
+    border-right: 2px solid rgb(211, 211, 211);
+}
+
+
+.centro, .derecha, .izquierda{
+    padding: 0px 20px 0 10px;
+}
+
+.centro {
+    flex: 2; 
+    align-items: center;
+    border-right: 2px solid rgb(211, 211, 211);
+}
+
+.derecha{
+    flex: 1.1;
+}
+
+.small{
+    font-size: 1rem;
+    color: #202020;
+}
+
+#Imagen2{
+    padding-top: 20px;
+}
+
+.centro img{
+    padding: 8px;
+}
+
+.derecha{
+    align-items: center;
+}
+
+.derecha{
+    padding: 0px 0px 0 10px;
+}
+
+.end{
+    text-align: end;
+}
+
+@media (max-width: 800px){
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2, h3{
+        font-size: 1.3rem;
+    }
+
+    .izquierda{
+        flex: 0.8;
+    }
+
+    .centro{
+        flex: 1;
+    }
+
+    .derecha{
+        flex: 0.8;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 650px){
+
+    h1, h2, h3{
+        text-align: center;
+    }
+
+    .cuerpo{
+        display: block;
+    }
+
+    footer ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer li{
+        padding-bottom: 5px;
+    }
+
+    .derecha img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px){
+
+    header{
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    header .title{
+        width: 80%;
+    }
+
+    .subs, .fecha{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .derecha{
+        padding: 0;
+    }
+}
